@@ -11,8 +11,6 @@ javascript task2
 <script>
 let data;
 data=[
-    {principal:2500, time:1.8},    {principal:2500, time:1.8},
-
     {principal:2500, time:1.8},
     {principal:1000, time:5},
     {principal:3000, time:1},
@@ -20,8 +18,8 @@ data=[
 
 ];
 function interestCalculator(array){
-array.forEach(element => {
-        if (element.principal >= 2500 && element.time > 1 && element.time < 3){
+            array.forEach(element => {
+                if (element.principal >= 2500 && element.principal > 1 && element.time < 3){
                     element.rate = 3;
                 }else if(element.principal >= 2500 && element.time >= 3){
                     element.rate = 4;
